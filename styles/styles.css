@@ -2,30 +2,42 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: italic;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: italic;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-/*
+
 body {
   font-family: "PT sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
+}
+
+.button {
+  text-decoration: none;
+  color: #000000;
 }
 .navigation-link {
   font-family: "PT sans", sans-serif;
@@ -45,7 +57,78 @@ body {
   background-color: #756257;
   color: #ffffff;
 }
-*/
+.first-screen {
+  font-family: "PT sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+}
+.first-screen,p {
+  font-family: "PT sans", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+}
+/*Не получается перенести текст на голубой фон*/
+.advantages-item-blue {
+  color: #ffffff;
+  background-color: #83B3D3;
+}
+.lightblue {
+  background: rgba(131, 179, 211, 0.2);
+}
+.advantages-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.advantages_descripton {
+  font-size: 18px;
+  line-height: 21px;
+}
+.hotel-search-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.hotel-search-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+.hotel-search-link {
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #756257;
+  color: #ffffff;
+}
+.hotel-search {
+  text-align: center;
+}
+/*Как увеличить размер поля ввода и кнопки?*/
+.newsletter {
+  text-align: center;
+  color: #ffffff;
+}
+.newsletter-form button {
+  text-transform: uppercase;
+  background-color: #83B3D3;
+  color: #ffffff;
+  border-radius: 0px 10px 10px 0px;
+  margin-left: 0px;
+  font-size: 20px;
+  line-height: 26px;
+}
+.footer-contacts {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+
 
 .main-index {
   background-image: url("../images/index-background.jpg");
@@ -120,6 +203,16 @@ body {
 }
 .button-cards {
   background-image: url("../images/mode-list-1.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+}
+.navigation-item-search {
+  background-image: url("../images/search.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+}
+.navigation-item-favorite {
+  background-image: url("../images/favorite.svg");
   background-size: 16px 14px;
   background-repeat: no-repeat;
 }
