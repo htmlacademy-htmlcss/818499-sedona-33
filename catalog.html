@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 <body>
   <header class="page-header">
@@ -35,13 +37,14 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">хочу сюда!</a>
+          <a class="navigation-link navigation-button" href="#">хочу сюда!</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="main-inner">
+    <div class="index-columns">
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -107,6 +110,7 @@
         </fieldset>
         <button class="button" type="submit">Применить</button>
       </form>
+    </div>
       <section class="search-results">
         <h2>Найдено гостиниц: 38</h2>
       </section>
@@ -121,7 +125,7 @@
       <a href="#" class="button button-full">
         <span class="visually-hidden">Показать крупно</span>
       </a>
-      <a href="#" class="button">
+      <a href="#" class="button button-cards">
         <span class="visually-hidden">Показать карточки</span>
       </a>
 
@@ -136,7 +140,7 @@
         <b class="product-card-price">От 4000 ₽</b>
         <a class="product-card-button button" href="#">подробнее</a>
         <a class="product-card-button button" href="#">В избранное</a>
-        <img src="images/star.png" class="ranking-star" width="18" height="17" alt="изображение звезд рейтинга">
+        <img src="images/star.svg" class="ranking-star" width="18" height="17" alt="изображение звезд рейтинга">
         <b class="product-card-ranking">Рейтинг: 8,5</b>
       </li>
     </ul>
@@ -150,7 +154,7 @@
         <b class="product-card-price">От 3000 ₽</b>
         <a class="product-card-button button" href="#">подробнее</a>
         <a class="product-card-button button" href="#">В избранное</a>
-        <img src="images/star.png" class="ranking-star" width="18" height="17" alt="изображение звезд рейтинга">
+        <img src="images/star.svg" class="ranking-star" width="18" height="17" alt="изображение звезд рейтинга">
         <b class="product-card-ranking">Рейтинг: 8,9</b>
       </li>
     </ul>
@@ -164,7 +168,7 @@
         <b class="product-card-price">От 2000 ₽</b>
         <a class="product-card-button button" href="#">подробнее</a>
         <a class="product-card-button-favorites button" href="#">В избранном</a>
-        <img src="images/star.png" class="ranking-star" width="18" height="17" alt="изображение звезд рейтинга">
+        <img src="images/star.svg" class="ranking-star" width="18" height="17" alt="изображение звезд рейтинга">
         <b class="product-card-ranking">Рейтинг: 9,2</b>
       </li>
     </ul>
@@ -178,7 +182,7 @@
         <b class="product-card-price">От 3000 ₽</b>
         <a class="product-card-button button" href="#">подробнее</a>
         <a class="product-card-button button" href="#">В избранное</a>
-        <img src="images/star.png" class="ranking-star" width="18" height="17" alt="изображение звезд рейтинга">
+        <img src="images/star.svg" class="ranking-star" width="18" height="17" alt="изображение звезд рейтинга">
         <b class="product-card-ranking">Рейтинг: 9,2</b>
       </li>
     </ul>
@@ -225,22 +229,19 @@
   <footer class="page-footer">
     <section class="footer-social">
       <ul class="footer-social-list">
-        <li class="footer-social-item">
+        <li class="footer-social-item twitter">
           <a class="button" href="https://twitter.com/htmlacademy_ru">
             <h2 class="visually-hidden">Твиттер</h2>
-            <img src="images/Vector-1.svg" width="18" height="15" alt="логотип твиттер">
           </a>
         </li>
-        <li class="footer-social-item">
+        <li class="footer-social-item facebook">
           <a class="button" href="https://www.facebook.com/htmlacademy">
             <h2 class="visually-hidden">Фейсбук</h2>
-            <img src="images/Vector-2.svg" width="10" height="18" alt="логотип фейсбук">
           </a>
         </li>
-        <li class="footer-social-item">
+        <li class="footer-social-item youtube">
           <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
             <h2 class="visually-hidden">Ютуб</h2>
-            <img src="images/Vector-3.svg" width="20" height="16" alt="логотип ютуб">
           </a>
         </li>
       </ul>
