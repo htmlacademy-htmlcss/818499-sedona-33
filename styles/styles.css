@@ -26,9 +26,10 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-
-body {
+* {
   font-family: "PT sans", sans-serif;
+}
+body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
@@ -40,7 +41,6 @@ body {
   color: #000000;
 }
 .navigation-link {
-  font-family: "PT sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
@@ -48,7 +48,6 @@ body {
   text-transform: capitalize;
 }
 .navigation-button {
-  font-family: "PT sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -57,23 +56,31 @@ body {
   background-color: #756257;
   color: #ffffff;
 }
-.first-screen {
-  font-family: "PT sans", sans-serif;
+.first-screen-title {
   font-size: 30px;
   line-height: 36px;
+  font-weight: 700;
 }
-.first-screen,p {
-  font-family: "PT sans", sans-serif;
+.first-screen-description {
   font-size: 22px;
   line-height: 36px;
+  font-weight: 400;
 }
-/*Не получается перенести текст на голубой фон*/
 .advantages-item-blue {
   color: #ffffff;
   background-color: #83B3D3;
+  width: 400px;
+  height: 384px;
 }
 .lightblue {
   background: rgba(131, 179, 211, 0.2);
+  width: 400px;
+  height: 384px;
+}
+.lightblue-easy {
+  background: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  height: 384px;
 }
 .advantages-title {
   text-transform: uppercase;
@@ -84,16 +91,18 @@ body {
 .advantages_descripton {
   font-size: 18px;
   line-height: 21px;
+  font-weight: 400;
 }
 .hotel-search-title {
   text-transform: uppercase;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700;
 }
 .hotel-search-description {
   font-size: 22px;
   line-height: 26px;
+  font-weight: 400;
 }
 .hotel-search-link {
   font-size: 20px;
@@ -102,14 +111,21 @@ body {
   text-transform: uppercase;
   background-color: #756257;
   color: #ffffff;
+  font-weight: 700;
 }
 .hotel-search {
   text-align: center;
 }
-/*Как увеличить размер поля ввода и кнопки?*/
 .newsletter {
   text-align: center;
   color: #ffffff;
+  background-image: url("../images/background.jpg");
+  background-size: 1200px 411px;
+  background-repeat: no-repeat;
+}
+.newsletter-catalog {
+  background-image: none;
+  color: #000000;
 }
 .newsletter-form button {
   text-transform: uppercase;
@@ -119,26 +135,128 @@ body {
   margin-left: 0px;
   font-size: 20px;
   line-height: 26px;
+  font-weight: 700;
+}
+.newsletter-form input {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
 }
 .footer-contacts {
   font-size: 40px;
   line-height: 40px;
+  font-weight: 700;
   text-align: center;
   text-decoration: none;
   color: #000000;
 }
-
-
-
+.index-columns {
+  color: #ffffff;
+}
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.catalog-filter-list {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+.filter-button {
+  color: #ffffff;
+  background-color:#83B3D3;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.search-results {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+}
+.select-control {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+.product-card-title {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+}
+.product-card  b{
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+.product-card-button {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.button-more {
+  background-color: #756257;
+  text-decoration: none;
+}
+.button-favorites {
+  background-color: #83B3D3;
+  text-decoration: none;
+}
+.button-favorites-current {
+  background-color: #7DB54F;
+  text-decoration: none;
+}
+.product-card-ranking {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.pagination-show-more {
+  background-color: #83B3D3;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.pagination-item {
+  background-color: #83B3D3;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  width: 55px;
+  height: 55px;
+  border-radius: 4px;
+}
+.pagination-item-current {
+  background-color: #F2F2F2;
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.hotels-per-page {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
 .main-index {
   background-image: url("../images/index-background.jpg");
   background-size: 1200px 485px;
-  background-repeat: no-repeat;
-}
-/*Здесь у меня не получилось изменить высоту изображения*/
-.newsletter {
-  background-image: url("../images/background.jpg");
-  background-size: 1200px 411px;
   background-repeat: no-repeat;
 }
 .product-card-ranking {
@@ -174,13 +292,11 @@ body {
   background-size: 20px 16px;
   background-repeat: no-repeat;
 }
-/*здесь тоже с высотой проблема*/
 .advantages-number-one {
   background-image: url("../images/photo-1.jpg");
   background-size: 800px 384px;
   background-repeat: no-repeat;
 }
-/*И тут*/
 .advantages-number-two {
   background-image: url("../images/photo-2.jpg");
   background-size: 800px 384px;
