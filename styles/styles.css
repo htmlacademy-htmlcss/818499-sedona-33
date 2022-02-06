@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.button {
+  text-decoration: none;
+  color: #000000;
+}
+.navigation-link {
+  font-family: "PT sans", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.navigation-button {
+  font-family: "PT sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #756257;
+  color: #ffffff;
+}
+.first-screen {
+  font-family: "PT sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+}
+.first-screen,p {
+  font-family: "PT sans", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+}
+/*Не получается перенести текст на голубой фон*/
+.advantages-item-blue {
+  color: #ffffff;
+  background-color: #83B3D3;
+}
+.lightblue {
+  background: rgba(131, 179, 211, 0.2);
+}
+.advantages-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.advantages_descripton {
+  font-size: 18px;
+  line-height: 21px;
+}
+.hotel-search-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.hotel-search-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+.hotel-search-link {
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #756257;
+  color: #ffffff;
+}
+.hotel-search {
+  text-align: center;
+}
+/*Как увеличить размер поля ввода и кнопки?*/
+.newsletter {
+  text-align: center;
+  color: #ffffff;
+}
+.newsletter-form button {
+  text-transform: uppercase;
+  background-color: #83B3D3;
+  color: #ffffff;
+  border-radius: 0px 10px 10px 0px;
+  margin-left: 0px;
+  font-size: 20px;
+  line-height: 26px;
+}
+.footer-contacts {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+
+
+.main-index {
+  background-image: url("../images/index-background.jpg");
+  background-size: 1200px 485px;
+  background-repeat: no-repeat;
+}
+/*Здесь у меня не получилось изменить высоту изображения*/
+.newsletter {
+  background-image: url("../images/background.jpg");
+  background-size: 1200px 411px;
+  background-repeat: no-repeat;
+}
+.product-card-ranking {
+  background-image: url("../images/star.svg");
+}
+.advantages-house {
+  background-image: url("../images/icon-1.svg");
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
+}
+.advantages-food {
+  background-image: url("../images/icon-2.svg");
+  background-size: 74px 70px;
+  background-repeat: no-repeat;
+}
+.advantages-souvenir {
+  background-image: url("../images/icon-3.svg");
+  background-size: 64px 78px;
+  background-repeat: no-repeat;
+}
+.footer-social-item.twitter {
+  background-image: url("../images/vector-1.svg");
+  background-size: 18px 15px;
+  background-repeat: no-repeat;
+}
+.footer-social-item.facebook {
+  background-image: url("../images/vector-2.svg");
+  background-size: 10px 18px;
+  background-repeat: no-repeat;
+}
+.footer-social-item.youtube {
+  background-image: url("../images/vector-3.svg");
+  background-size: 20px 16px;
+  background-repeat: no-repeat;
+}
+/*здесь тоже с высотой проблема*/
+.advantages-number-one {
+  background-image: url("../images/photo-1.jpg");
+  background-size: 800px 384px;
+  background-repeat: no-repeat;
+}
+/*И тут*/
+.advantages-number-two {
+  background-image: url("../images/photo-2.jpg");
+  background-size: 800px 384px;
+  background-repeat: no-repeat;
+}
+.index-columns {
+  background-image: url("../images/catalog-background-1.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.button-light {
+  background-image: url("../images/mode-tile-1.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+}
+.button-full {
+  background-image: url("../images/mode-slideshow-1.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+}
+.button-cards {
+  background-image: url("../images/mode-list-1.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+}
+.navigation-item-search {
+  background-image: url("../images/search.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+}
+.navigation-item-favorite {
+  background-image: url("../images/favorite.svg");
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+}
+.product-card-ranking {
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+/*.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
