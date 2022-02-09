@@ -9,12 +9,10 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
+      <a href="index.html">
+        <img class="logo" src="images/logo.svg" width="139" height="70" alt="Логотип Седоны">
+      </a>
       <ul class="navigation-list">
-        <li class="navigation-item">
-          <a href="index.html">
-            <img class="logo" src="images/logo.svg" width="139" height="70" alt="Логотип Седоны">
-          </a>
-        </li>
         <li class="navigation-item">
           <a class="navigation-link" href="index.html">Главная</a>
         </li>
@@ -43,7 +41,8 @@
     </nav>
   </header>
 
-  <main class="main-inner">
+  <main class="main-inner main-container">
+    <div class="page-container">
     <div class="index-columns">
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -60,7 +59,7 @@
     </header>
 
     <section class="catalog-products">
-      <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+      <h2 class="visually-hidden" hidden>Список гостиниц с фильтрами</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -219,10 +218,11 @@
           <button class="buttton" type="submit">Подписаться</button>
       </form>
     </section>
+  </div>
   </main>
 
   <footer class="page-footer">
-
+    <div class="page-footer-container">
     <ul class="footer-social-list">
         <li class="footer-social-item twitter">
           <a class="button" href="https://twitter.com/htmlacademy_ru">
@@ -245,7 +245,7 @@
     <a class="footer-logo-link" href="https://htmlacademy.ru/">
         <img  src="images/logo-academy.svg" width="115" height="34" alt="Логотип Академии">
       </a>
-
+    </div>
   </footer>
 </body>
 </html>
