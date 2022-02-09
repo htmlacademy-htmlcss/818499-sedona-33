@@ -108,13 +108,11 @@
             </li>
         </ul>
         </fieldset>
-        <button class="button" type="submit">Применить</button>
+        <button class="button filter-button" type="submit">Применить</button>
       </form>
       </section>
     </div>
-      <section class="search-results">
-        <h2>Найдено гостиниц: 38</h2>
-      </section>
+      <span class="search-results">Найдено гостиниц: 38</span>
       <select class="select-control" aria-label="Сортировка">
         <option value="popular">Сначала дешёвые</option>
         <option value="cheap">Сначала дорогие</option>
@@ -139,8 +137,8 @@
         </a>
         <b class="product-card-housetype">Гостиница</b>
         <b class="product-card-price">От 4000 ₽</b>
-        <a class="product-card-button button" href="#">подробнее</a>
-        <a class="product-card-button button" href="#">В избранное</a>
+        <a class="product-card-button button-more" href="#">подробнее</a>
+        <a class="product-card-button button-favorites" href="#">В избранное</a>
         <b class="product-card-ranking">Рейтинг: 8,5</b>
       </li>
     </ul>
@@ -152,8 +150,8 @@
         </a>
         <b class="product-card-housetype">Гостиница</b>
         <b class="product-card-price">От 3000 ₽</b>
-        <a class="product-card-button button" href="#">подробнее</a>
-        <a class="product-card-button button" href="#">В избранное</a>
+        <a class="product-card-button button-more" href="#">подробнее</a>
+        <a class="product-card-button button-favorites" href="#">В избранное</a>
         <b class="product-card-ranking">Рейтинг: 8,9</b>
       </li>
     </ul>
@@ -165,8 +163,8 @@
         </a>
         <b class="product-card-housetype">Гостиница</b>
         <b class="product-card-price">От 2000 ₽</b>
-        <a class="product-card-button button" href="#">подробнее</a>
-        <a class="product-card-button-favorites button" href="#">В избранном</a>
+        <a class="product-card-button button-more" href="#">подробнее</a>
+        <a class="product-card-button button-favorites-current" href="#">В избранном</a>
         <b class="product-card-ranking">Рейтинг: 9,2</b>
       </li>
     </ul>
@@ -178,8 +176,8 @@
         </a>
         <b class="product-card-housetype">Гостиница</b>
         <b class="product-card-price">От 3000 ₽</b>
-        <a class="product-card-button button" href="#">подробнее</a>
-        <a class="product-card-button button" href="#">В избранное</a>
+        <a class="product-card-button button-more" href="#">подробнее</a>
+        <a class="product-card-button button-favorites" href="#">В избранное</a>
         <b class="product-card-ranking">Рейтинг: 9,2</b>
       </li>
     </ul>
@@ -187,7 +185,7 @@
     <button class="button pagination-show-more" type="button">Загрузить ещё</button>
 
     <ul class="pagination">
-      <li class="pagination-item">
+      <li class="pagination-item pagination-item-current">
         <a class="pagination-link pagination-current">1</a>
       </li>
       <li class="pagination-item">
@@ -209,10 +207,10 @@
       </li>
     </ul>
     <p class="hotels-per-page">Гостиниц на странице:</p>
-    <p class="hotels-per-page-number">4</p>
+    <p class="hotels-per-page hotels-per-page-number">4</p>
 
 
-    <section class="newsletter">
+    <section class="newsletter newsletter-catalog">
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
       <p class="newsletter-description">Только полезная информация и никакого спама,
         честное бойскаутское!</p>
@@ -224,8 +222,8 @@
   </main>
 
   <footer class="page-footer">
-    <section class="footer-social">
-      <ul class="footer-social-list">
+
+    <ul class="footer-social-list">
         <li class="footer-social-item twitter">
           <a class="button" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Твиттер</span>
@@ -242,9 +240,8 @@
           </a>
         </li>
       </ul>
-    </section>
-
-    <a class="footer contacts" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    <div class="footer-contacts">
+    <a class="button" href="tel:+78128121212">+7 (812) 812-12-12</a></div>
     <a class="footer-logo-link" href="https://htmlacademy.ru/">
         <img  src="images/logo-academy.svg" width="115" height="34" alt="Логотип Академии">
       </a>
