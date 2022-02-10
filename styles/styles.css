@@ -28,8 +28,6 @@
 }
 html {
   height: 100%;
-}
-body,header,footer {
   font-family: "PT sans", sans-serif;
 }
 body {
