@@ -97,7 +97,6 @@ body {
 }
 .catalog-filter-group {
   width: 150px;
-  height: 151px;
   display: flex;
   flex-direction: row;
 }
