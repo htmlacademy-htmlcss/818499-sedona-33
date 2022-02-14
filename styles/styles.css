@@ -155,8 +155,6 @@ body {
   margin: 0 auto;
   margin-top: 146px;
   margin-bottom: 80px;
-  /*background-image: url("../images/background-vector.svg");
-  background-repeat: no-repeat;*/
 }
 .first-screen-title {
   font-size: 30px;
@@ -188,12 +186,14 @@ body {
 .advantages-number {
   display: flex;
 }
-.advantages-item h3, .advantages-item p {
+.advantages-item h3,
+.advantages-item p {
   flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
 }
-.advantages-number-one,.advantages-number-two {
+.advantages-number-one,
+.advantages-number-two {
   color: #ffffff;
   background-color: #83b3d3;
   width: 1200px;
@@ -202,7 +202,10 @@ body {
 .advantages-road {
   background: rgba(131, 179, 211, 0.2);
 }
-.advantages-house,.advantages-souvenir,.advantages-area,.advantages-tourists {
+.advantages-house,
+.advantages-souvenir,
+.advantages-area,
+.advantages-tourists {
   background: rgba(131, 179, 211, 0.12);
 
 }
