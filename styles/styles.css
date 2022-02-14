@@ -178,10 +178,10 @@ body {
 }
 .advantages-item {
   max-width: 400px;
-  padding: 97px 0px 87px 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 146px 0;
 }
 .advantages-number {
   display: flex;
@@ -191,14 +191,35 @@ body {
   flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
+  align-self: center;
 }
 .advantages-number-one,
 .advantages-number-two {
   color: #ffffff;
   background-color: #83b3d3;
-  width: 1200px;
-
+  max-width: 1200px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0;
 }
+
+.advantages-number-two {
+  flex-direction: row-reverse;
+}
+
+.advantages-number-one h3,
+.advantages-number-one p {
+  align-items: center;
+  align-self: center;
+}
+
+.advantages-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 90px 20px;
+}
+
 .advantages-road {
   background: rgba(131, 179, 211, 0.2);
 }
@@ -209,18 +230,16 @@ body {
   background: rgba(131, 179, 211, 0.12);
 
 }
-.advantages-area {
-  padding: 0;
-}
-.advantages-area h3 {
-  padding-top: 90px;
-}
-.advantages-area .advantages-number {
+.advantages-area h3,
+.advantages-road h3,
+.advantages-tourists h3 {
+  padding: 0 81px;
   padding-bottom: 10px;
-  padding-top: 20px;
 }
-.advantages-area p {
-  padding-bottom: 95px;
+.advantages-area,
+.advantages-road,
+.advantages-tourists {
+  padding: 127px 0px;
 }
 .advantages-title {
   text-transform: uppercase;
@@ -228,17 +247,13 @@ body {
   font-size: 24px;
   line-height: 28px;
   display: flex;
-  width: 400px;
   justify-content: center;
-  margin: 0 110px;
-  padding-bottom: 20px;
 }
 .advantages_descripton {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   display: flex;
-  margin: 0 90px;
 }
 .hotel-search {
   padding-top: 91px;
@@ -501,7 +516,6 @@ body {
   background-size: 74px 70px;
   background-repeat: no-repeat;
   background-position: top 60px center;
-  padding: 139px 0;
 }
 .advantages-food p {
   margin: 0 80px;
@@ -512,12 +526,7 @@ body {
   background-repeat: no-repeat;
   background-position: center 50px;
 }
-.advantages-souvenir h3 {
-  padding-top: 30px;
-}
-.advantages-souvenir p {
-  padding-bottom: 35px;
-}
+
 .footer-social-item.twitter {
   background-image: url("../images/vector-3.svg");
   background-size: 18px 15px;
