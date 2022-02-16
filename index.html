@@ -8,8 +8,8 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a href="index.html">
-          <img class="logo" src="images/logo.svg" width="139" height="70" alt="Логотип Седоны">
+        <a class="header-logo" href="index.html">
+          <img class="page-header-logo" src="images/logo.svg" width="139" height="70" alt="Логотип Седоны">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -23,12 +23,14 @@
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item-search">
-            <a class="navigation-link" href="#">
+          <li class="navigation-item navigation-search">
+            <a class="navigation-link navigation-search" href="#">
+              <span class="visually-hidden">поиск</span>
             </a>
           </li>
-          <li class="navigation-item-favorite">
+          <li class="navigation-item navigation-favorite">
             <a class="navigation-link" href="#">
+              <span class="visually-hidden">в избранное</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -50,12 +52,14 @@
       <section class="advantages">
         <ul class="advantages-list">
           <li class="advantages-item advantages-number-one">
-            <img src="images/photo-1.jpg" alt="Изображение города" width="800" height="384">
+            <section class="advantages-text">
             <h3 class="advantages-title">Настоящий
               городок</h3>
             <p class="advantages-number">— №1 —</p>
             <p class="advantages_descripton">Седона — не аттракцион для туристов, там течёт
                 своя жизнь</p>
+            </section>
+            <img src="images/photo-1.jpg" alt="Изображение города" width="800" height="384">
           </li>
           <li class="advantages-item advantages-house">
             <h3 class="advantages-title">Жильё</h3>
@@ -74,11 +78,13 @@
               но и настоящего местного производства!</p>
           </li>
           <li class="advantages-item advantages-number-two">
-            <img src="images/photo-2.jpg" alt="Изображение каньона" width="800" height="384">
+            <section class="advantages-text">
             <h3 class="advantages-title">Там есть
               мост дьявола</h3>
             <p class="advantages-number">— №2 —</p>
             <p class="advantages_descripton">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </section>
+            <img src="images/photo-2.jpg" alt="Изображение города" width="800" height="384">
           </li>
           <li class="advantages-item advantages-area">
             <h3 class="advantages-title">Небольшая
@@ -103,7 +109,7 @@
       </section>
       <section class="hotel-search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
-        <p class="hotel-search-description">Укажите предполагаемые даты поездки,<br>
+        <p class="hotel-search-description">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <a class="hotel-search-link" href="catalog.html">поиск гостиницы в седоне</a>
