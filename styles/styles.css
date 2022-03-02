@@ -89,17 +89,10 @@ body {
 .navigation-link:focus .navigation-icon {
   fill: #dbdbdb;
 }
-/*.navigation-link:hover {
-  color: #756257;
-}
-
-.navigation-icon:hover {
-  fill: #756257;
-}
 
 .navigation-button:hover {
   background-color: #615048;
-}*/
+}
 .navigation-button:focus {
   box-shadow: inset 0 0 0 3px #83b3d3;
   border: none;
