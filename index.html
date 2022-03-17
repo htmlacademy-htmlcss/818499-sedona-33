@@ -36,10 +36,7 @@
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="18" viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.6 17.4a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.2.4c1.3 0 2.5.5 3.5 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 8-.8.2ZM3.6 8l6 7 6.3-7c.5-.6.7-1.3.7-2 0-1.9-1.5-3.4-3.3-3.4-1 0-2 .5-2.7 1.3-.3.3-.6.4-1 .4L9 3.8a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1 1 .3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
               </svg>
-              <svg class= "favorite-number" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.6821 9.91142C19.6821 15.1581 15.4288 19.4114 10.1821 19.4114C4.93536 19.4114 0.682068 15.1581 0.682068 9.91142C0.682068 4.66472 4.93536 0.411423 10.1821 0.411423C15.4288 0.411423 19.6821 4.66472 19.6821 9.91142Z" fill="#7DB550"/>
-                <path d="M6.31285 12.6714H7.71285V7.83142L7.81285 7.24142L7.41285 7.71142L6.31285 8.50142L5.93285 7.99142L8.13285 6.29142H8.49285V12.6714H9.86285V13.4114H6.31285V12.6714ZM14.1421 8.00142C14.1421 8.35476 14.0754 8.71809 13.9421 9.09142C13.8154 9.45809 13.6454 9.82809 13.4321 10.2014C13.2254 10.5748 12.9921 10.9414 12.7321 11.3014C12.4721 11.6548 12.2121 11.9914 11.9521 12.3114L11.4621 12.7414V12.7814L12.1021 12.6714H14.2821V13.4114H10.3021V13.1214C10.4487 12.9681 10.6254 12.7781 10.8321 12.5514C11.0387 12.3248 11.2521 12.0748 11.4721 11.8014C11.6987 11.5214 11.9187 11.2281 12.1321 10.9214C12.3521 10.6081 12.5487 10.2914 12.7221 9.97142C12.9021 9.65142 13.0454 9.33476 13.1521 9.02142C13.2587 8.70809 13.3121 8.41142 13.3121 8.13142C13.3121 7.80476 13.2187 7.53476 13.0321 7.32142C12.8454 7.10142 12.5621 6.99142 12.1821 6.99142C11.9287 6.99142 11.6821 7.04476 11.4421 7.15142C11.2021 7.25142 10.9954 7.36809 10.8221 7.50142L10.4921 6.93142C10.7254 6.73142 11.0021 6.57476 11.3221 6.46142C11.6421 6.34809 11.9854 6.29142 12.3521 6.29142C12.6387 6.29142 12.8921 6.33476 13.1121 6.42142C13.3321 6.50142 13.5187 6.61809 13.6721 6.77142C13.8254 6.92476 13.9421 7.10809 14.0221 7.32142C14.1021 7.52809 14.1421 7.75476 14.1421 8.00142Z" fill="white"/>
-                </svg>
+              <span class= "favorite-number">12</span>
               <span class="visually-hidden">в избранное</span>
             </a>
           </li>
@@ -51,6 +48,9 @@
     </header>
 
     <main class="main-index main-container">
+      <svg class="main-divider" width="1200" height="57" viewBox="0 0 1200 57" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 57V0L250 24V0L600 57L950 0V24L1200 0V57H0Z" fill="white"/>
+        </svg>
       <div class="page-container">
       <h1 class="visually-hidden">Sedona</h1>
       <img class="welcome" src="images/welcome.svg" width="458" height="352" alt="Логотип добро пожаловать">
@@ -173,42 +173,31 @@
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-
-        <!--Сообщения об ошибке и успехе как сделать-->
-
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="form-label" for="auth-in">Дата заезда:</label>
-              <input class="auth-form-field field" type="text" placeholder="Укажите дату">
-              <p class="invalid-input">Сообщение об ошибке</p>
+              <input class="auth-form-field field" id="auth-in" name="auth-in" type="text" placeholder="Укажите дату">
+              <span class="invalid-input">Сообщение об ошибке</span>
             </p>
             <p class="field-group">
               <label class="form-label" for="auth-out">Дата выезда:</label>
-              <input class="auth-form-field field" type="text" placeholder="Укажите дату">
-              <p class="valid-input">Сообщение об успехе</p>
+              <input class="auth-form-field field" id="auth-out" name="auth-out" type="text" placeholder="Укажите дату">
+              <span class="valid-input">Сообщение об успехе</span>
             </p>
           </form>
-
-
           <form class="number-of-people" action="https://echo.htmlacademy.ru/" method="post">
             <p class="number-of-adults">
               <label class="form-label adults" for="adults">Взрослые:</label>
               <input class="numbers-form-field field" type="number" id="adults" name="adults" placeholder="2">
-
-              <!--Сделать состояния для плюса и минуса-->
-
-              <span class="control-mark-input control-minus">-</span>
-              <span class="control-mark-input control-plus">+</span>
+              <button class="control-mark-input control-minus" type="button">-</button>
+              <button class="control-mark-input control-plus" type="button">+</button>
             </p>
             <p class="number-of-children">
             <span class="form-label">
               <label class="form-label children" for="children">Дети:</label>
               <span class="tooltip">
-
-                <!--Дорисовать тултип-->
-
                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                   <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12.5" cy="12.5" r="12.5"/>
@@ -227,8 +216,8 @@
               </span>
             </span>
               <input class="numbers-form-field field" type="number" id="children" name="children" placeholder="1">
-              <span class="control-mark-input control-minus-children">-</span>
-              <span class="control-mark-input control-plus-children">+</span>
+              <button class="control-mark-input control-minus-children" type="button">-</button>
+              <button class="control-mark-input control-plus-children" type="button">+</button>
             </p>
             <button class="button auth-form-button" type="submit">Найти</button>
           </form>
