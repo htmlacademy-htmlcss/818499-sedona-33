@@ -604,13 +604,12 @@ body {
   margin-bottom: 45px;
 }
 .breadcrumbs-item:not(:last-child) {
-  padding-right: 10px;
+  padding-right: 20px;
 }
-.breadcrumbs-item:nth-child(2) {
-  background-image: url("../images/vector-crumbs.svg");
+.breadcrumbs {
+  background-image: url(../images/vector-crumbs.svg);
   background-repeat: no-repeat;
-  background-position: left;
-  opacity: 0.6;
+  background-position: 20px;
 }
 .catalog-filter-title {
   font-size: 20px;
@@ -641,6 +640,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .product-card-title {
   font-size: 24px;
@@ -653,6 +653,7 @@ body {
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
+  margin-left: auto;
 }
 .product-card-housetype {
   padding-left: 6px;
@@ -742,6 +743,16 @@ body {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
+}
+.product-card-ranking::after {
+  content: "";
+  width: 46px;
+  position: absolute;
+  height: 17px;
+  background-image: url(../images/star.svg);
+  background-repeat: repeat;
+  left: 0px;
+  bottom: 13px;
 }
 .product-card-link {
   text-decoration: none;
@@ -840,17 +851,14 @@ body {
   padding: 10px 33px;
 }
 
-.rating-result {
-	margin-top: 16px;
+.product-card:nth-of-type(2) .product-card-ranking::after {
+  background-image: url("../images/star.svg");
+  background-repeat: repeat-x;
+  width: 68px;
+  height: 17px;
 }
-.rating-result span {
-	padding: 0;
-  font-size: 24px;
-  margin: 0 3px 0 0;
-  color: #83b3d3;
-}
-.rating-result > span:before {
-	content: '★';
+.product-card:nth-of-type(1) .product-card-ranking::after {
+  width: 96px;
 }
 .modal-container {
   position: fixed;
@@ -968,56 +976,6 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-/*.control-minus::before,
-.control-minus::after {
-  position: absolute;
-  top: 29px;
-  left: 165px;
-  width: 12px;
-  height: 1px;
-  background-color: #242424;
-  content: "";
-  opacity: 0.5;
-}
-.control-plus::before,
-.control-plus::after {
-  position: absolute;
-  top: 29px;
-  width: 12px;
-  left: 252px;
-  height: 1px;
-  background-color: #242424;
-  content: "";
-  opacity: 0.5;
-}
-.control-plus::after {
-  transform: rotate(90deg);
-}
-.control-plus-children::before,
-.control-plus-children::after {
-  position: absolute;
-  top: 29px;
-  width: 12px;
-  left: 195px;
-  height: 1px;
-  background-color: gray;
-  content: "";
-  opacity: 0.5;
-}
-.control-minus-children::before,
-.control-minus-children::after {
-  position: absolute;
-  top: 29px;
-  width: 12px;
-  left: 112px;
-  height: 1px;
-  background-color: #242424;
-  content: "";
-  opacity: 0.5;
-}
-.control-plus-children::after {
-  transform: rotate(90deg);
-}*/
 .control-mark-input {
   font-size: 22px;
   opacity: 0.3;
