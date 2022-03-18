@@ -36,6 +36,7 @@
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="18" viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.6 17.4a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.2.4c1.3 0 2.5.5 3.5 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 8-.8.2ZM3.6 8l6 7 6.3-7c.5-.6.7-1.3.7-2 0-1.9-1.5-3.4-3.3-3.4-1 0-2 .5-2.7 1.3-.3.3-.6.4-1 .4L9 3.8a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1 1 .3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
               </svg>
+              <span class= "favorite-number">12</span>
               <span class="visually-hidden">в избранное</span>
             </a>
           </li>
@@ -47,6 +48,9 @@
     </header>
 
     <main class="main-index main-container">
+      <svg class="main-divider" width="1200" height="57" viewBox="0 0 1200 57" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 57V0L250 24V0L600 57L950 0V24L1200 0V57H0Z" fill="white"/>
+        </svg>
       <div class="page-container">
       <h1 class="visually-hidden">Sedona</h1>
       <img class="welcome" src="images/welcome.svg" width="458" height="352" alt="Логотип добро пожаловать">
@@ -163,5 +167,63 @@
         </a>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="form-label" for="auth-in">Дата заезда:</label>
+              <input class="auth-form-field field" id="auth-in" name="auth-in" type="text" placeholder="Укажите дату">
+              <span class="invalid-input">Сообщение об ошибке</span>
+            </p>
+            <p class="field-group">
+              <label class="form-label" for="auth-out">Дата выезда:</label>
+              <input class="auth-form-field field" id="auth-out" name="auth-out" type="text" placeholder="Укажите дату">
+              <span class="valid-input">Сообщение об успехе</span>
+            </p>
+          </form>
+          <form class="number-of-people" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="number-of-adults">
+              <label class="form-label adults" for="adults">Взрослые:</label>
+              <input class="numbers-form-field field" type="number" id="adults" name="adults" placeholder="2">
+              <button class="control-mark-input control-minus" type="button">-</button>
+              <button class="control-mark-input control-plus" type="button">+</button>
+            </p>
+            <p class="number-of-children">
+            <span class="form-label">
+              <label class="form-label children" for="children">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12.5" cy="12.5" r="12.5"/>
+                    <g clip-path="url(#clip0_23712_200)">
+                    <path d="M12 17H13V11H12V17Z" fill="white"/>
+                    <path d="M13 8H12V9H13V8Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_23712_200">
+                    <rect width="1" height="9" fill="white" transform="translate(12 8)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </span>
+              <input class="numbers-form-field field" type="number" id="children" name="children" placeholder="1">
+              <button class="control-mark-input control-minus-children" type="button">-</button>
+              <button class="control-mark-input control-plus-children" type="button">+</button>
+            </p>
+            <button class="button auth-form-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 </html>
