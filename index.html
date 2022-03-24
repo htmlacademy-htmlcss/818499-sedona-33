@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
     <header class="page-header">
@@ -64,64 +65,59 @@
             <h3 class="advantages-title">Настоящий
               городок</h3>
             <p class="advantages-number">— №1 —</p>
-            <p class="advantages_descripton">Седона — не аттракцион для туристов, там течёт
+            <p class="advantages-descripton">Седона — не аттракцион для туристов, там течёт
                 своя жизнь</p>
             <img src="images/photo-1.jpg" alt="Изображение города" width="800" height="384">
           </li>
           <li class="advantages-item advantages-house">
             <h3 class="advantages-title">Жильё</h3>
-            <p class="advantages_descripton">Рекомендуем пожить
-              в настоящем мотеле,
-              всё как в кино!</p>
+            <p class="advantages-descripton">Рекомендуем пожить <br> в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="advantages-item advantages-food">
             <h3 class="advantages-title">Еда</h3>
-            <p class="advantages_descripton">Всегда заказывайте
-              топовый фирменный бургер, вы не разочаруетесь!</p>
+            <p class="advantages-descripton">Всегда заказывайте <br> топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantages-item advantages-souvenir">
             <h3 class="advantages-title">Сувениры</h3>
-            <p class="advantages_descripton">Не только китайского,
-              но и настоящего местного производства!</p>
+            <p class="advantages-descripton">Не только китайского,<br> но и настоящего местного  производства!</p>
           </li>
           <li class="advantages-item advantages-number-two">
             <h3 class="advantages-title">Там есть
               мост дьявола</h3>
             <p class="advantages-number">— №2 —</p>
-            <p class="advantages_descripton">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <p class="advantages-descripton">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img src="images/photo-2.jpg" alt="Изображение города" width="800" height="384">
           </li>
           <li class="advantages-item advantages-area">
             <h3 class="advantages-title">Небольшая
               площадь</h3>
             <p class="advantages-number">— №3 —</p>
-            <p class="advantages_descripton">Все достопримечательности
+            <p class="advantages-descripton">Все достопримечательности
               находятся очень близко</p>
           </li>
           <li class="advantages-item advantages-road">
             <h3 class="advantages-title">Красивая
               дорога</h3>
             <p class="advantages-number">— №4 —</p>
-            <p class="advantages_descripton">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="advantages-descripton">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages-item advantages-tourists">
             <h3 class="advantages-title">Мало
               туристов</h3>
             <p class="advantages-number">— №5 —</p>
-            <p class="advantages_descripton">Большинство едет в Гранд Каньон и толпится там</p>
+            <p class="advantages-descripton">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
       <section class="hotel-search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
-        <p class="hotel-search-description">Укажите предполагаемые даты поездки,
+        <p class="hotel-search-description">Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <a class="hotel-search-link" href="catalog.html">поиск гостиницы в седоне</a>
       </section>
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-description">Только полезная информация и никакого спама,
-          честное бойскаутское!</p>
+        <p class="newsletter-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <input type="email" name="newsletter-email" placeholder="Ваш e-mail">
             <button class="buttton" type="submit">Подписаться</button>
@@ -178,16 +174,14 @@
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="form-label" for="auth-in">Дата заезда:</label>
-              <input class="auth-form-field field" id="auth-in" name="auth-in" type="text" placeholder="Укажите дату">
+              <input class="auth-form-field field" id="auth-in" name="auth-in" type="text" placeholder="Укажите дату" required>
               <span class="invalid-input">Сообщение об ошибке</span>
             </p>
             <p class="field-group">
               <label class="form-label" for="auth-out">Дата выезда:</label>
-              <input class="auth-form-field field" id="auth-out" name="auth-out" type="text" placeholder="Укажите дату">
+              <input class="auth-form-field field" id="auth-out" name="auth-out" type="text" placeholder="Укажите дату" required>
               <span class="valid-input">Сообщение об успехе</span>
             </p>
-          </form>
-          <form class="number-of-people" action="https://echo.htmlacademy.ru/" method="post">
             <p class="number-of-adults">
               <label class="form-label adults" for="adults">Взрослые:</label>
               <input class="numbers-form-field field" type="number" id="adults" name="adults" placeholder="2">
