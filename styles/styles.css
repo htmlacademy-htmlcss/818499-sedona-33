@@ -581,7 +581,7 @@ body {
   line-height: 26px;
   font-weight: 700;
   width: 200px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   padding-left: 3px;
 }
 
@@ -855,7 +855,7 @@ body {
   position: relative;
   top: 26px;
   right: 1px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
 }
 
@@ -885,7 +885,7 @@ body {
   margin-right: 81px;
   max-width: 290px;
   max-height: 48px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 .select-control:hover {
@@ -968,7 +968,7 @@ body {
   box-sizing: border-box;
   text-transform: uppercase;
   justify-content: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 .pagination {
@@ -1153,7 +1153,7 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  font-family: PT Sans;
+  font-family: "PT Sans, sans-serif";
   line-height: 35px;
 }
 
@@ -1583,7 +1583,7 @@ input::-webkit-inner-spin-button {
   width: 144px;
   height: 48px;
   padding: 22px 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
 }
 
