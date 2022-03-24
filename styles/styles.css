@@ -632,7 +632,7 @@ body {
   width: 600px;
   box-sizing: border-box;
   padding: 16px 0 17px 23px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 .newsletter-form input:hover {
@@ -1153,7 +1153,7 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  font-family: "PT Sans, sans-serif";
+  font-family: "PT Sans", sans-serif;
   line-height: 35px;
 }
 
