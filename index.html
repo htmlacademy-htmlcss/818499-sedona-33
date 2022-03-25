@@ -27,7 +27,7 @@
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item navigation-search">
-          <a class="navigation-link navigation-search" href="#">
+          <a class="navigation-link" href="#">
             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 19 19"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -60,9 +60,7 @@
       <h1 class="visually-hidden">Sedona</h1>
       <section class="welcome-wrapper">
         <img class="welcome" src="images/welcome.svg" width="458" height="352" alt="Логотип добро пожаловать">
-        <svg class="main-divider" width="1200" height="57" viewBox="0 0 1200 57" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 57V0L250 24V0L600 57L950 0V24L1200 0V57H0Z" fill="white" />
-        </svg>
+
       </section>
       <section class="first-screen">
         <h2 class="first-screen-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -70,10 +68,11 @@
       </section>
       <ul class="advantages-list">
         <li class="advantages-item advantages-number-one">
-          <h3 class="advantages-title">Настоящий городок</h3>
-          <p class="advantages-number">— №1 —</p>
-          <p class="advantages-descripton">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img src="images/photo-1.jpg" alt="Изображение города" width="800" height="384">
+          <section class="advantages-container">
+            <h3 class="advantages-title">Настоящий городок</h3>
+            <p class="advantages-number">— №1 —</p>
+            <p class="advantages-descripton">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </section>
         </li>
         <li class="advantages-item advantages-house">
           <h3 class="advantages-title">Жильё</h3>
@@ -88,10 +87,11 @@
           <p class="advantages-descripton">Не только китайского,<br> но и настоящего местного производства!</p>
         </li>
         <li class="advantages-item advantages-number-two">
-          <h3 class="advantages-title">Там есть мост дьявола</h3>
-          <p class="advantages-number">— №2 —</p>
-          <p class="advantages-descripton">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          <img src="images/photo-2.jpg" alt="Изображение города" width="800" height="384">
+          <section class="advantages-container">
+            <h3 class="advantages-title">Там есть мост дьявола</h3>
+            <p class="advantages-number">— №2 —</p>
+            <p class="advantages-descripton">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </section>
         </li>
         <li class="advantages-item advantages-area">
           <h3 class="advantages-title">Небольшая площадь</h3>
@@ -111,8 +111,7 @@
       </ul>
       <section class="hotel-search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
-        <p class="hotel-search-description">Укажите предполагаемые даты поездки, <br>
-          и мы покажем вам лучшие предложения гостиниц в Седоне
+        <p class="hotel-search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <a class="hotel-search-link" href="catalog.html">поиск гостиницы в седоне</a>
       </section>
@@ -133,8 +132,7 @@
       <ul class="footer-social-list">
         <li class="footer-social-item twitter">
           <a class="footer-social-link button" href="https://twitter.com/htmlacademy_ru">
-            <svg class="footer-icon" aria-hidden="true" focusable="false" width="18" height="15" viewBox="0 0 18 15"
-              fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="footer-icon" aria-hidden="true" focusable="false" width="18" height="15" viewBox="0 0 18 15" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M11.6.2c1.8-.5 3.2.3 3.8 1.2l2.1-.7c0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6a3 3 0 0 1-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9a11 11 0 0 0 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z"
                 fill="#83B3D3" />
@@ -144,8 +142,7 @@
         </li>
         <li class="footer-social-item facebook">
           <a class="footer-social-link button" href="https://www.facebook.com/htmlacademy">
-            <svg class="footer-icon" aria-hidden="true" focusable="false" width="10" height="18" viewBox="0 0 10 18"
-              fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="footer-icon" aria-hidden="true" focusable="false" width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 0a4 4 0 0 0-4 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z" fill="#83B3D3" />
             </svg>
             <span class="visually-hidden">Фейсбук</span>
@@ -153,8 +150,7 @@
         </li>
         <li class="footer-social-item youtube">
           <a class="footer-social-link button" href="https://www.youtube.com/c/HTMLAcademyRUS">
-            <svg class="footer-icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16"
-              fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="footer-icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"
                 fill="#83B3D3" />
@@ -177,7 +173,7 @@
 
   <div class="modal-container modal-container-close">
     <div class="modal modal-auth">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -185,15 +181,15 @@
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="field-group">
             <label class="form-label" for="auth-in">Дата заезда:</label>
-            <input class="auth-form-field field" id="auth-in" name="auth-in" type="text" placeholder="Укажите дату"
+            <input class="auth-form-field field" id="auth-in" name="auth-in" type="text" placeholder="27 апреля 2020"
               required>
-            <span class="invalid-input">Сообщение об ошибке</span>
+            <span class="invalid-input">Мы не можем отправить вас в прошлое.</span>
           </p>
           <p class="field-group">
             <label class="form-label" for="auth-out">Дата выезда:</label>
-            <input class="auth-form-field field" id="auth-out" name="auth-out" type="text" placeholder="Укажите дату"
+            <input class="auth-form-field field" id="auth-out" name="auth-out" type="text" placeholder="1 сентября 2021"
               required>
-            <span class="valid-input">Сообщение об успехе</span>
+            <span class="valid-input">На эти даты есть свободные номера. Пока есть.</span>
           </p>
           <p class="number-of-adults">
             <label class="form-label adults" for="adults">Взрослые:</label>
