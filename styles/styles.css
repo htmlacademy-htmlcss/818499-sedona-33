@@ -49,7 +49,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  padding: 0 40px;
 }
 
 .favorite-number {
@@ -95,6 +94,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  max-width: 345px;
 }
 
 .header-logo {
@@ -102,6 +102,13 @@ body {
   align-items: center;
   margin-right: 48px;
   min-width: 139px;
+}
+
+.header-logo:focus-visible ,
+.navigation-list a:focus-visible ,
+.hotel-search-link:focus-visible ,
+.newsletter-form input:focus-visible {
+  outline: none;
 }
 
 .page-header-logo {
@@ -117,7 +124,7 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   display: flex;
-  padding: 20px 34px 20px 0px;
+  padding: 20px 34px 20px 0;
 }
 
 .navigation-pages .navigation-link {
@@ -129,7 +136,7 @@ body {
   top: -5px;
   right: 25px;
   bottom: 0;
-  left: -5px;
+  left: 0;
   margin: auto;
   fill: #000000;
 }
@@ -187,11 +194,24 @@ body {
   margin-bottom: 5px;
 }
 
+.navigation-button:focus-visible {
+  outline: none;
+}
+
 .navigation-user {
   margin-left: auto;
   align-items: center;
   display: flex;
   justify-content: space-between;
+  max-width: 264px;
+}
+
+.navigation-search {
+  padding: 6px 3px 0 0;
+}
+
+.navigation-favorite {
+  padding: 5px 3px 0 0;
 }
 
 .page-container {
@@ -261,7 +281,7 @@ body {
 }
 
 .footer-social-link:active {
-  fill: rgba(255, 255, 255, 0.3);
+  opacity: 0.3;
 }
 
 .footer-logo-link {
@@ -279,6 +299,10 @@ body {
   border: none;
   position: relative;
   margin-right: 64px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 13px;
 }
 
 .catalog-filter-group:nth-child(3) {
@@ -326,7 +350,7 @@ body {
 .advantages-list {
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 25% 25% 25% 25%;;
+  grid-template-rows: auto;
   padding: 0;
 }
 
@@ -339,11 +363,13 @@ body {
 .advantages-number-one {
   grid-column: 1 / -1;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   max-width: 1200px;
+  background-image: url("../images/photo-1.jpg");
+  background-position: right top;
 }
 
 .advantages-number {
@@ -357,7 +383,8 @@ body {
 .advantages-number-two {
   color: #ffffff;
   background-color: #83b3d3;
-  max-height: 384px;
+  background-size: 800px 384px;
+  background-repeat: no-repeat;
 }
 
 .advantages-number-two {
@@ -366,7 +393,9 @@ body {
   flex-wrap: wrap-reverse;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
+  background-image: url("../images/photo-2.jpg");
+
 }
 
 .advantages-road {
@@ -477,8 +506,15 @@ body {
   align-content: flex-end;
 }
 
+.advantages-container {
+  display: flex;
+  max-width: 400px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .hotel-search {
-  padding-top: 53px;
+  padding-top: 47px;
   padding-bottom: 93px;
 }
 
@@ -538,9 +574,13 @@ body {
   background-image: url("../images/background.jpg");
   background-size: 1200px 411px;
   background-repeat: no-repeat;
-  padding-top: 43px;
-  padding-bottom: 102px;
+  padding-top: 51px;
+  padding-bottom: 94px;
   background-color: #83b3d3;
+}
+
+.newsletter-catalog .newsletter-title {
+  margin-bottom: 40px;
 }
 
 .newsletter-title {
@@ -548,7 +588,8 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 41px;
+  margin-bottom: 24px;
+	margin-top: 43px;
 }
 
 .newsletter-description {
@@ -562,7 +603,8 @@ body {
 .newsletter-catalog {
   background-image: none;
   color: #000000;
-  background-color: #ffffff
+  background-color: #ffffff;
+  padding-top: 24px;
 }
 
 .newsletter-form {
@@ -587,27 +629,40 @@ body {
   padding-left: 3px;
 }
 
-.newsletter-form button:hover,
-.pagination-link:hover,
-.button-favorites:hover,
-.auth-form-button:hover,
+.newsletter-form button:hover ,
+.pagination-link:hover ,
+.button-favorites:hover ,
+.auth-form-button:hover ,
 .pagination-show-more:hover {
   background-color: #68a2ca;
 }
 
-.newsletter-form button:focus,
-.pagination-link:focus,
-.button-favorites:focus,
-.auth-form-button:focus,
+.newsletter-form button:focus ,
+.pagination-link:focus ,
+.button-favorites:focus ,
+.auth-form-button:focus ,
 .pagination-show-more:focus {
   box-shadow: inset 0 0 0 3px #756257;
   border: none;
 }
 
-.newsletter-form button:active,
-.pagination-link:active,
-.button-favorites:active,
-.auth-form-button:active,
+.newsletter-form button:focus-visible ,
+.pagination-link:focus-visible ,
+.button-favorites:focus-visible ,
+.auth-form-button:focus-visible ,
+.pagination-show-more:focus-visible ,
+.filter-button:focus-visible ,
+.button-select:focus-visible ,
+.select-control:focus-visible ,
+.product-card a:focus-visible ,
+.product-card-image:focus-visible {
+  outline: none;
+}
+
+.newsletter-form button:active ,
+.pagination-link:active ,
+.button-favorites:active ,
+.auth-form-button:active ,
 .pagination-show-more:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -618,7 +673,7 @@ body {
 
 .button-favorites-current:focus {
   background: #6c9e42;
-  border: 3px solid #756257;
+  outline: 3px solid #756257;
 }
 
 .button-favorites-current:active {
@@ -643,7 +698,7 @@ body {
 
 .newsletter-form input:focus {
   outline: 3px solid #83b3d3;
-  outline-offset: -2px;
+  outline-offset: -3px;
 }
 
 .newsletter-form input:invalid {
@@ -735,6 +790,10 @@ body {
   box-shadow: none;
 }
 
+.page-footer a:focus-visible {
+  outline: none;
+}
+
 .index-columns {
   color: #ffffff;
   padding-top: 1px;
@@ -797,7 +856,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 300px);
   gap: 57px;
-  margin-top: 72px;
+  margin-top: 74px;
   justify-content: center;
 }
 
@@ -855,7 +914,7 @@ body {
   border-radius: 4px;
   height: 48px;
   position: relative;
-  top: 26px;
+  top: 35px;
   right: 1px;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
@@ -1057,11 +1116,11 @@ body {
 
 .index-columns {
   background-image: url("../images/catalog-background-1.jpg");
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: #756257;
   margin-bottom: 44px;
-  padding-bottom: 71px;
+  padding-bottom: 85px;
   padding-top: 35px;
 }
 
@@ -1180,10 +1239,13 @@ body {
 
 .auth-form-field {
   width: 420px;
-  padding: 10px;
-  background-image: url("../images/Group.svg");
-  background-repeat: no-repeat;
-  background-position: center right 19px;
+	min-height: 50px;
+	padding: 5px 20px;
+	background-image: url(../images/Group.svg);
+	background-repeat: no-repeat;
+	background-position: center right 19px;
+	box-sizing: border-box;
+  font-family: "PT Sans";
 }
 
 .auth-form {
@@ -1244,6 +1306,10 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .control-mark-input {
@@ -1370,6 +1436,10 @@ input::-webkit-inner-spin-button {
   font-size: 18px;
   line-height: 40px;
 }
+.auth-form-field ,
+.numbers-form-field {
+  opacity: 1;
+}
 
 .invalid-input {
   color: #ff5757;
@@ -1397,7 +1467,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   display: block;
   padding-left: 41px;
-  margin-bottom: 13px;
+
 }
 
 .control-mark {
@@ -1430,19 +1500,19 @@ input::-webkit-inner-spin-button {
   content: "";
 }
 
-.control-input[type="checkbox"]:checked+.control-mark::before {
+.control-input[type="checkbox"]:checked + .control-mark::before {
   transform: rotate(40deg);
 }
 
-.control-input[type="checkbox"]:checked+.control-mark::after {
+.control-input[type="checkbox"]:checked + .control-mark::after {
   transform: rotate(131deg);
 }
 
-.control-input[type="radio"]+.control-mark {
+.control-input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked+.control-mark::before {
+.control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
   top: 5px;
   left: 5px;
@@ -1453,24 +1523,24 @@ input::-webkit-inner-spin-button {
   content: "";
 }
 
-.control-input[type="checkbox"]+.control-mark:hover {
+.control:hover input[type="checkbox"] + .control-mark {
   opacity: 0.6;
 }
 
-.control-input[type="checkbox"]+.control-mark:focus {
+.control:focus input[type="checkbox"] + .control-mark {
   opacity: 0.3;
   outline: 3px solid #83b3d3;
 }
 
-.control-input[type="checkbox"]+.control-mark:active {
+.control:active input[type="checkbox"] + .control-mark {
   opacity: 0.3;
 }
 
-.control-input[type="radio"]:checked+.control-mark:focus {
+.control:focus input[type="radio"]:checked + .control-mark {
   outline: 3px solid #83b3d3;
 }
 
-.control-input[type="radio"]+.control-mark:focus {
+.control:focus input[type="radio"] + .control-mark {
   outline: 3px solid #83b3d3;
   outline-offset: -3px;
 }
@@ -1544,7 +1614,7 @@ input::-webkit-inner-spin-button {
   line-height: 24px;
   align-self: center;
   text-transform: none;
-  top: 33px;
+  top: 42px;
 }
 
 .button-reset:hover {
